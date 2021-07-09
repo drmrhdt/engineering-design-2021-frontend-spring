@@ -1,0 +1,28 @@
+.create-user-form__fields-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  margin: 0 auto;
+
+  &__fields-container {
+    margin-bottom: 0.7rem;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__input:nth-of-type(1) {
+    margin-bottom: 0.5rem;
+  }
+
+  &__input,
+  &__btn {
+    width: 100%;
+  }
+}
+
+.p-inputtext {
+  width: 100%;
+}

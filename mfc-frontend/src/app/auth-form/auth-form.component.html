@@ -1,0 +1,29 @@
+<div class="auth-form">
+    <h2 class="auth-form__title">
+        Авторизация
+    </h2>
+    <div class="auth-form__fields-container">
+        <span class="p-float-label">
+            <label for="username">Логин</label>
+            <input id="username"
+                   type="text"
+                   pInputText
+                   class="auth-form__input"
+                   [(ngModel)]="usernameControl">
+        </span>
+        <span class="p-float-label">
+            <label for="password">Пароль</label>
+            <input id="password"
+                   type="text"
+                   pInputText
+                   class="auth-form__input"
+                   [(ngModel)]="passwordControl">
+        </span>
+    </div>
+    <button pButton
+            class="auth-form__btn btn--primary"
+            type="button"
+            label="Войти"
+            (click)="onSignInClick()">
+    </button>
+</div>

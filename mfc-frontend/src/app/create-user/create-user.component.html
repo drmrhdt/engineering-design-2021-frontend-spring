@@ -1,0 +1,52 @@
+<div class="create-user-form__fields-container">
+    <div class="create-user-form__fields-container">
+        <span class="p-float-label">
+            <label for="last_name">Фамилия</label>
+            <input id="last_name"
+                   type="text"
+                   pInputText
+                   class="create-user-form__input p-inputtext p-component"
+                   [(ngModel)]="last_name">
+        </span>
+        <span class="p-float-label">
+            <label for="first_name">Имя</label>
+            <input id="first_name"
+                   type="text"
+                   pInputText
+                   class="create-user-form__input p-inputtext p-component"
+                   [(ngModel)]="first_name">
+        </span>
+        <span class="p-float-label">
+            <label for="patronyc">Отчество</label>
+            <input id="patronyc"
+                   type="text"
+                   pInputText
+                   class="create-user-form__input p-inputtext p-component"
+                   [(ngModel)]="patronyc">
+        </span>
+        <div class="p-field-radiobutton">
+            <p-radioButton name="genders"
+                           value="male"
+                           label="Мужской"
+                           class="p-component p-radiobutton"
+                           inputId="male"
+                           [(ngModel)]="gender">
+            </p-radioButton>
+            <label for="male">Мужской</label>
+            <p-radioButton name="genders"
+                           value="female"
+                           label="Женский"
+                           class="p-component p-radiobutton"
+                           inputId="female"
+                           [(ngModel)]="gender">
+            </p-radioButton>
+            <label for="female">Женский</label>
+        </div>
+        <p-calendar [(ngModel)]="calendar"></p-calendar>
+    </div>
+    <button pButton
+            class="btn--primary"
+            type="button">
+        Создать
+    </button>
+</div>
